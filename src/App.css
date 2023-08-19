@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-container{
+  background-color: aqua;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.card-container{
+  background-color: goldenrod;
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.card-btn button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  border-color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+button#increment:hover{
+  background-color: darkgreen;
+  color: azure;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button#increment{
+  background-color: darkblue;
+  color: azure;
+}
+.heading{
+  margin-top: 1s0px;
+}
+
+
+.initial{
+  font-size: 30px;
+}
+
+button#reset:hover{
+  background-color: darkmagenta;
+  color: azure;
+}
+
+button#decrement:hover{
+  background-color: brown;
+  color: azure;
+}
+
+button#decrement{
+  background-color: mediumspringgreen;
 }

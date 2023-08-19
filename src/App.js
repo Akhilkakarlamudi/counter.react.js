@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { useState } from 'react'
 
-function App() {
+export default function App() {
+
+  const[count,setCount]=useState(0);
+
+  function handleDelete(){
+    setCount(count+1)
+
+  }
+
+  function handlereset(){
+    setCount(0)
+
+  }
+
+
+  function handledecrement(){
+    setCount(count-1)
+
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className='bg-container'>
+      <div className='card-container'>
+        <h1 className='heading'>Counter</h1>
+        <p className='initial'>{count}</p>
+        <div className='card-btn'>
+          <button id="increment" onClick={()=>handleDelete()}>increment</button>
+          <button id="reset" onClick={()=>handlereset()}>reset</button>
+          <button id="decrement" onClick={()=>handledecrement()}>decrement</button>
+        </div>
 
-export default App;
+        
+</div>
+
+    </div>
+  )
+}
